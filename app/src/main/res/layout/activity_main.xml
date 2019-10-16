@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="16dp">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnClick"
+        android:text="Click"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iconFirst"
+        android:src="@drawable/icon_first"
+        android:visibility="invisible"
+        android:layout_below="@+id/btnClick"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iconSecond"
+        android:src="@drawable/icon_second"
+        android:visibility="invisible"
+        android:layout_toEndOf="@+id/iconFirst"
+        android:layout_below="@+id/btnClick"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iconThird"
+        android:visibility="invisible"
+        android:src="@drawable/icon_third"
+        android:layout_below="@+id/iconFirst"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iconFourth"
+        android:visibility="invisible"
+        android:src="@drawable/icon_fourth"
+        android:layout_toEndOf="@+id/iconThird"
+        android:layout_below="@+id/iconSecond"/>
+
+</RelativeLayout>
